@@ -16,6 +16,8 @@ import min from "../assets/beranda/min.png";
 import scroll from "../assets/beranda/scroll.png";
 import Esg from "../components/Esg";
 import Berita from "../components/Berita";
+import Pengumuman from "../components/Pengumuman";
+import Tentang from "../components/Tentang";
 
 export default function Home() {
   const title = "Beranda";
@@ -78,7 +80,7 @@ export default function Home() {
       </div>
       <img
         src={lineHk}
-        alt=""
+        alt="garis"
         style={{ marginLeft: "37%", marginTop: "-230px", width: "63%" }}
       />
       {/* PENGEMBANGAN BISNIS */}
@@ -182,6 +184,10 @@ export default function Home() {
       <Esg />
       {/* BERITA */}
       <Berita />
+      {/* PENGUMUMAN */}
+      <Pengumuman />
+      {/* TENTANG KAMI */}
+      <Tentang />
       <Footer />
     </div>
   );

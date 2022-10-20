@@ -108,3 +108,208 @@ code {
   color: white;
   font-size: small;
 }
+
+.date {
+  margin-right: 10px;
+}
+
+.karir {
+  font-size: 60px;
+}
+
+.karir b {
+  font-weight: bolder;
+}
+
+.penipuan {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.penipuan b {
+  color: red;
+  font-weight: 900;
+}
+
+.kerja {
+  font-weight: 600;
+  color: #364384;
+}
+
+/* card styling anak perusahaan */
+.containerCard {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  margin: auto;
+}
+
+.containerCard .box {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin: 8px;
+  border: 1px solid grey;
+}
+
+.containerCard .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.containerCard .box .imgBx:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #364384;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+
+.containerCard .box:hover .imgBx:before {
+  opacity: 1;
+}
+
+.containerCard .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+
+.containerCard .box .content h2 {
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 15px;
+  transform: translateY(200px);
+  transition-delay: 0.3s;
+}
+
+.containerCard .box:hover .content h2 {
+  transform: translateY(0px);
+}
+
+.containerCard .box .content p {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 12px;
+  transform: translateY(200px);
+  transition-delay: 0.4s;
+}
+
+.containerCard .box:hover .content p {
+  transform: translateY(0px);
+}
+
+/* card styling anak perusahaan tidak langsung */
+.containerCardTL {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  margin: auto;
+}
+
+.containerCardTL .boxTL {
+  position: relative;
+  width: 270px;
+  height: 200px;
+  background: transparent;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin: 8px;
+  border: 0px;
+}
+
+.containerCardTL .boxTL .imgBxTL {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.containerCardTL .boxTL .imgBxTL:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #364384;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+
+.containerCardTL .boxTL:hover .imgBxTL:before {
+  opacity: 1;
+}
+
+.containerCardTL .boxTL .contentTL {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+
+.containerCardTL .boxTL .contentTL h2 {
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 15px;
+  transform: translateX(-300px);
+  transition-delay: 0.3s;
+}
+
+.containerCardTL .boxTL:hover .contentTL h2 {
+  transform: translateY(0px);
+}
+
+.containerCardTL .boxTL .contentTL p {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 12px;
+  transform: translateY(200px);
+  transition-delay: 0.4s;
+}
+
+.containerCardTL .boxTL:hover .contentTL p {
+  transform: translateY(0px);
+}

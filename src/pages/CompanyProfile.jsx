@@ -7,6 +7,9 @@ import visi from "../assets/co-profile/visi.png";
 import misi from "../assets/co-profile/misi.png";
 import sejarah from "../assets/co-profile/sejarah.png";
 import tatanilai from "../assets/co-profile/tata-nilai.png";
+import BudayaKerja from "../components/BudayaKerja";
+import AnakPerusahaan from "../components/AnakPerusahaan";
+import AnakPerusahaanTL from "../components/AnakPerusahaanTL";
 
 export default function CompanyProfile() {
   const title = "Profil Perusahaan";
@@ -104,6 +107,9 @@ export default function CompanyProfile() {
           backgroundRepeat: "no-repeat",
         }}
       ></div>
+      <BudayaKerja />
+      <AnakPerusahaan />
+      <AnakPerusahaanTL />
       <Footer />
     </div>
   );
