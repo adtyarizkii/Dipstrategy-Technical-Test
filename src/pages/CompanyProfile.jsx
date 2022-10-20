@@ -2,13 +2,16 @@ import React from "react";
 import Footer from "../components/Footer";
 import { NavbarHome } from "../components/NavbarHome";
 import bgImg from "../assets/bg-tentang.png";
-import video from "../assets/Endgame.mp4";
+import video from "../assets/co-profile/vid.mp4";
 import visi from "../assets/co-profile/visi.png";
 import misi from "../assets/co-profile/misi.png";
 import sejarah from "../assets/co-profile/sejarah.png";
 import tatanilai from "../assets/co-profile/tata-nilai.png";
 
 export default function CompanyProfile() {
+  const title = "Profil Perusahaan";
+  document.title = "PTBA | " + title;
+
   return (
     <div>
       <NavbarHome />

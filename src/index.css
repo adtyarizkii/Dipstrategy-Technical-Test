@@ -73,3 +73,38 @@ code {
   margin-top: -32px;
   font-weight: 700;
 }
+
+.image img:hover {
+  transform: scale(1.2);
+  color: #364384;
+}
+
+.image-desc {
+  font-weight: 600;
+  color: #364384;
+}
+
+.btn-pengembangan {
+  width: 100%;
+  color: black !important;
+  font-weight: 800 !important;
+  font-size: 25px;
+  background-color: transparent !important;
+  border: 0px !important;
+  text-align: left;
+}
+
+.border {
+  border: 0px !important;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.btn-selengkapnya {
+  border: 0px !important;
+  border-radius: 7px;
+  padding: 7px;
+  background-color: #364384;
+  color: white;
+  font-size: small;
+}
